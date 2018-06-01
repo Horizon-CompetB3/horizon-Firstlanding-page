@@ -4,21 +4,98 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>First Landing page</title>
+  <title>Banan'Art</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+<section id="section-first">
+  <header>
+    <div><img></div>
+    <div><h1>Banan'Art</h1></div>
+  </header>
+  <div id="cont-intro-text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi autem commodi dolore dolorum ea facere
+      nemo nostrum quasi, suscipit tempore, tenetur unde. Ex iure nam nemo, numquam quod sapiente?</p>
+  </div>
+  <div id="cont-btn">
+    <button id="btn-artiste" class="btn-first" onclick="scrollArt()">Artiste</button>
+    <button id="btn-entreprise" class="btn-first" onclick="scrollEnt()">Entreprise</button>
+  </div>
+</section>
+<section id="artiste" class="artiste">
 
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <div class="div-photo">
+    <img>
+    <img>
+  </div>
+  <div class="div-content">
+    <button class="close" onclick="closeArtEnt()">X</button>
+    <div class="div-text">
+      <h2>Titre 1</h2>
+      <div id="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis consectetur consequuntur
+          corporis
+          distinctio.</p>
+      </div>
+      <input placeholder="Nom" type="text"></br>
+      <input placeholder="email" type="text"></br>
+      <input type="submit">
+
+      <div>
+        <a><img></a>
+        <a><img></a>
+        <a><img></a>
+        <a><img></a>
+      </div>
+      <div>
+        <p class="little-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, commodi deleniti, dicta
+          eaque excepturi fuga ipsa
+          itaque molestias nisi, repellendus saepe ullam vel veritatis.</p></div>
+    </div>
+  </div>
+
+</section>
+<section id="entreprise" class="entreprise">
+
+  <div class="div-photo">
+    <img>
+    <img>
+  </div>
+  <div class="div-content">
+    <button class="close" onclick="closeArtEnt()">X</button>
+    <div class="div-text">
+      <h2>Titre 2</h2>
+      <div id="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis consectetur consequuntur
+          corporis
+          distinctio.</p>
+      </div>
+      <input placeholder="Nom" type="text"></br>
+      <input placeholder="email" type="text"></br>
+      <input type="submit">
+
+      <div>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+
+      </div>
+      <div>
+        <p class="little-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, commodi deleniti, dicta
+          eaque excepturi fuga ipsa
+          itaque molestias nisi, repellendus saepe ullam vel veritatis.</p></div>
+    </div>
+  </div>
+
+</section>
+
+<script src="js/main.js"></script>
+
 </body>
 
 </html>
