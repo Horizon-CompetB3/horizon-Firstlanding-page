@@ -68,7 +68,7 @@ span {
   font-size: 1.3vw;
   text-transform: uppercase;
   width: 40%
-    
+
 }
 #cont-btn {
   width: 40%;
@@ -115,6 +115,7 @@ span {
   background-color: darkgrey;
   height: 100%;
   width: 50%;
+  overflow: hidden;
 }
 
 .div-photo img {
@@ -124,6 +125,7 @@ span {
 .div-content {
   height: 100%;
   width: 50%;
+  overflow: hidden;
 }
 
 .div-text {
@@ -228,25 +230,35 @@ span {
   margin-top: 1%;
 }
 
+.modale-ent{
+  width: 20%;
+  background-color: white;
+  position: relative;
+  top: 20vh;
+  visibility: hidden;
 
 
+}
+.modale-ent-visible{
+  visibility: visible;
+}
 
 
 @media only screen and (max-width: 600px) {
 
-    
+
 .logo-bananart img {
     width: 25%;
     position: absolute;
     top:2%;
     left:38%;
 }
-    
+
 .titre {
   margin-top: 40%;
 }
 
-    
+
 .btn-first {
   background: transparent;
   border: 0 solid black;
@@ -255,7 +267,7 @@ span {
   text-transform: uppercase;
   width: 70%;
   margin: 4%;
-    
+
 }
 #cont-btn {
   width: 80%;
@@ -270,11 +282,11 @@ span {
 #cont-intro-text p {
   font-size: 2vh;
 }
-    
-    
+
+
 h2 {
   font-size: 6vw;
-}    
+}
 
 #cont-intro-text {
   width: 80%;
@@ -282,8 +294,8 @@ h2 {
   margin-top: 15%;
   font-size: 1.5vw;
 }
-    
-    
+
+
 .div-photo {
   width: 0%;
 }
@@ -298,7 +310,7 @@ h2 {
     width: 90%;
     font-size: 2.1vh;
 }
-    
+
 .input-text {
   padding: 3%;
   font-size: 2.2vh;
@@ -307,7 +319,7 @@ h2 {
   margin: 3%;
   border: 1px grey solid;
 }
-    
+
 .submit {
   padding: 4%;
   font-size: 2.2vh;
@@ -316,7 +328,7 @@ h2 {
   margin-top: 3%;
   width: 40%;
 }
-    
+
 .reseaux {
   margin-top: 18%;
 }
@@ -329,7 +341,7 @@ h2 {
 }
 
 .close {
-font-size: 2.2vh;  
+font-size: 2.2vh;
 }
-    
+
 }
