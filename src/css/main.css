@@ -27,7 +27,6 @@ body {
 }
 
 header {
-  margin-top: 10%;
 
 }
 
@@ -100,6 +99,17 @@ span {
     position: absolute;
     top:2%;
     left:2%;
+  margin-bottom: 10%;
+}
+#error_message, #error_message-ent{
+  color: #731919;
+  font-family: "Montserrat-Medium", sans-serif;
+  margin-right: 2%;
+
+}
+#success_message, #success_message-ent{
+  font-family: "Montserrat-Medium", sans-serif;
+  margin-right: 2%;
 }
 
 
@@ -174,7 +184,7 @@ span {
 .entreprise {
   transition: 0.5s;
   position: relative;
-  top: 100vh;
+  top: 0vh;
 }
 
 .scroll-artiste {
@@ -242,7 +252,16 @@ span {
 .modale-ent-visible{
   visibility: visible;
 }
-
+.modal-confirm{
+  position: relative;
+ transition: 0.8s;
+  background-color: white;
+  color: #3f3f3f;
+  z-index: 10001;
+  text-align: center;
+  padding: 3%;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 600px) {
 
