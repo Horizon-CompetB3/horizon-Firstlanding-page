@@ -93,13 +93,15 @@ span {
     background-color: #FFD503;
     color: #fff;
 }
-
+.logo-bananart{
+  margin-bottom: 10%
+}
 .logo-bananart img {
     width: 7%;
     position: absolute;
     top:2%;
     left:2%;
-  margin-bottom: 10%;
+  ;
 }
 #error_message, #error_message-ent{
   color: #731919;
@@ -130,6 +132,12 @@ span {
 
 .div-photo img {
     width: 100%;
+
+}
+#entreprise .div-photo img{
+  top: -20%;
+  position: relative;
+
 }
 
 .div-content {
