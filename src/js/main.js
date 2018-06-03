@@ -17,4 +17,4 @@ function closeArtEnt() {
   elementTwo.classList.remove("scroll-entreprise");
 
 
-}
+};
