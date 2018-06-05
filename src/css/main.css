@@ -24,6 +24,7 @@ html {
 
 body {
   height: 100%;
+  position: absolute;
 }
 
 header {
@@ -248,18 +249,6 @@ span {
   margin-top: 1%;
 }
 
-.modale-ent{
-  width: 20%;
-  background-color: white;
-  position: relative;
-  top: 20vh;
-  visibility: hidden;
-
-
-}
-.modale-ent-visible{
-  visibility: visible;
-}
 .modal-confirm{
   position: relative;
  transition: 0.8s;
@@ -324,7 +313,7 @@ h2 {
 
 
 .div-photo {
-  width: 0%;
+  display: none;
 }
 
 .div-content {
@@ -360,7 +349,13 @@ h2 {
   margin-top: 18%;
 }
 
-
+  .scroll-entreprise {
+    background-color: #fff;
+    top: -100vh;
+    transition: 0.5s;
+    color: #000;
+    height: 100%;
+  }
 .little-text {
   width: 100%;
   font-size: 1.2vh;

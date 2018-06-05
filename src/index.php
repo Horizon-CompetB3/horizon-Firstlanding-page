@@ -144,9 +144,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
   </div>
 
 </section>
-<div id="modale-ent" class="modale-ent">
-  <h3>Adresse incorrecte Mail incorrect</h3>
-</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script>$(document).ready(function(){
@@ -211,15 +209,6 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
     });
   });</script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120279775-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-120279775-1');
-</script>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
