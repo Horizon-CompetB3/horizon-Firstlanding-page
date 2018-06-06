@@ -93,10 +93,10 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
       </form>
 
       <div class="reseaux">
-        <a href=""><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
-        <a href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
-        <a href=""><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
-        <a href=""><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
+        <a target="_blank" href="https://www.linkedin.com/company/banan-art/"><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
+        <a target="_blank" href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
+        <a target="_blank" href="https://www.instagram.com/bananartaetco/"><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
+        <a target="_blank" href="https://twitter.com/Bananartetco"><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
 
       </div>
       <div>
@@ -132,10 +132,10 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
       </form>
 
       <div class="reseaux">
-        <a href=""><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
-        <a href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
-        <a href=""><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
-        <a href=""><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
+        <a target="_blank" href="https://www.linkedin.com/company/banan-art/"><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
+        <a target="_blank" href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
+        <a target="_blank" href="https://www.instagram.com/bananartaetco/"><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
+        <a target="_blank" href="https://twitter.com/Bananartetco"><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
 
       </div>
       <div>
@@ -144,9 +144,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
   </div>
 
 </section>
-<div id="modale-ent" class="modale-ent">
-  <h3>Adresse incorrecte Mail incorrect</h3>
-</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script>$(document).ready(function(){
@@ -211,15 +209,6 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
     });
   });</script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120279775-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-120279775-1');
-</script>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
