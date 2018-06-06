@@ -19,12 +19,14 @@
 
 html {
   height: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
+
 }
 
 body {
   height: 100%;
   position: absolute;
+  overflow-y: hidden;
 }
 
 header {
@@ -61,13 +63,15 @@ span {
     color: #FFD503;
 }
 
+
 .btn-first {
   background: transparent;
   border: 0 solid black;
   padding: 3%;
   font-size: 1.3vw;
   text-transform: uppercase;
-  width: 40%
+  width: 40%;
+  cursor: pointer;
 
 }
 #cont-btn {
@@ -88,7 +92,21 @@ span {
 
 #btn-artiste {
     background-color: #fff;
+  --buttondBgColorHover: #3AB795;
+
 }
+#btn-artiste:hover {
+  background-color: #FFD503;
+  color: #fff;
+  transition: 0.5s;
+ }#btn-entreprise:hover {
+  background-color: #ffff;
+    color: #FFD503;
+  transition: 0.5s;
+ }
+
+
+
 
 #btn-entreprise {
     background-color: #FFD503;
@@ -188,12 +206,14 @@ span {
 .artiste {
   transition: 0.5s;
   top: -100vh;
+  height: 100vh;
 }
 
 .entreprise {
   transition: 0.5s;
   position: relative;
   top: 0vh;
+  height: 100vh;
 }
 
 .scroll-artiste {
@@ -272,6 +292,11 @@ span {
 
 .titre {
   margin-top: 40%;
+}
+.artiste, .entreprise{
+  height: 100vh;
+}
+body{height: 100%
 }
 
 
