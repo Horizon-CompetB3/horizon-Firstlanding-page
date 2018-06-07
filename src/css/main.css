@@ -18,13 +18,13 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   position: absolute;
   overflow-y: hidden;
 
@@ -132,7 +132,7 @@ p {
 }
 
 section {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 
 }
@@ -168,6 +168,7 @@ span {
       background: linear-gradient(to right, #7BD1A8 , #2FC2AD);
   background-image: url("../img/home-background.jpg");
   display: none;
+  height: 100vh;
 }
 
 #btn-artiste {
@@ -219,7 +220,7 @@ span {
 
 .div-photo {
   background-color: darkgrey;
-  height: 100%;
+  height: 100vh;
   width: 50%;
   overflow: hidden;
 }
@@ -230,7 +231,6 @@ span {
 
 }
 #entreprise .div-photo img{
-  top: -20%;
   position: relative;
 
 }
@@ -282,14 +282,14 @@ span {
 .artiste {
   transition: 0.5s;
   top: -100vh;
-  height: 100%;
+  height: 100vh;
 }
 
 .entreprise {
   transition: 0.5s;
   position: relative;
   top: 0vh;
-  height: 100%;
+  height: 100vh;
 }
 
 .scroll-artiste {

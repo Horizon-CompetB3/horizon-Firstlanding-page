@@ -90,13 +90,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 
       </form>
 
-      <div class="reseaux">
-        <a target="_blank" href="https://www.linkedin.com/company/banan-art/"><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.instagram.com/bananartaetco/"><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
-        <a target="_blank" href="https://twitter.com/Bananartetco"><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
-
-      </div>
+      <?php include 'inc/rs.inc.php'; ?>
       <div>
         <p class="little-text">Banan'Art est seule destinataire des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de modification, de rectification et de suppression de ces données. Pour l’exercer, vous pouvez envoyer un e-mail à l’adresse suivante : bananart.entreprise@gmail.com</p></div>
     </div>
@@ -126,13 +120,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 
       </form>
 
-      <div class="reseaux">
-        <a target="_blank" href="https://www.linkedin.com/company/banan-art/"><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.instagram.com/bananartaetco/"><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
-        <a target="_blank" href="https://twitter.com/Bananartetco"><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
-
-      </div>
+      <?php include 'inc/rs.inc.php'; ?>
       <div>
         <p class="little-text">Banan'Art est seule destinataire des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de modification, de rectification et de suppression de ces données. Pour l’exercer, vous pouvez envoyer un e-mail à l’adresse suivante : bananart.entreprise@gmail.com</p></div>
     </div>
