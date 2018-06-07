@@ -2,15 +2,14 @@
 
 
 include "inc/init.inc.php";
-if(isset($_POST['nameent'])){
+if(isset($_POST['mailent'])){
 
 if(!filter_var($_POST['mailent'],FILTER_VALIDATE_EMAIL))
 { echo "<script>$('#error_message-ent').html('Votre mail est invalide');</script>";
 }else {
 
-    $requeteInsertion = $pdo->prepare('INSERT INTO entmail (nameent, mailent) VALUES (:nameent, :mailent)');
+    $requeteInsertion = $pdo->prepare('INSERT INTO entmail (mailent) VALUES (:mailent)');
     $requeteInsertion->bindValue('mailent', $_POST['mailent'], PDO::PARAM_STR);
-    $requeteInsertion->bindValue('nameent', $_POST['nameent'], PDO::PARAM_STR);
     $requeteInsertion->execute();
 
 
@@ -118,7 +117,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
         Tenez-vous au courant en vous inscrivant à la Newsletter !</p>
       </div>
       <form method="post" action="" class="formulaire">
-        
+
         <input type="text" class="input-text" id="mailInput-ent" placeholder="Adresse email" name="mailent"> <br>
         <span id="error_message-ent" class="text-danger"></span>
         <span id="success_message-ent" class="text-success"></span>
@@ -177,10 +176,9 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 </script>
 <script> $(document).ready(function(){
     $('#submit-ent').click(function(){
-      var nameent = $('#nameInput-ent').val();
       var mailent = $('#mailInput-ent').val();
       var myRegex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
-      if(nameent == '' || mailent == '')
+      if(mailent == '')
       {
         $('#error_message-ent').html("Vous devez remplir l'ensemble des champs");
       }
@@ -193,7 +191,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
         $.ajax({
           url:"index.php",
           method:"POST",
-          data:{nameent:nameent, mailent:mailent},
+          data:{mailent:mailent},
           success:function(data){
             $("form").trigger("reset");
             setTimeout(function(){
