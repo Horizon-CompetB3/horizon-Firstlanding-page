@@ -42,18 +42,19 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
   <title>Banan'Art</title>
   <meta name="description" content="Banna'Art permet aux entreprises de recycler leurs rebuts tout en permettant aux artistes de se fournir en matières premières">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <meta name="author" content="Horizon">
   <meta name="copyright" content="Horizon">
   <link rel="icon" type="image/png" href="img/logo_bananart_blanc.png" />
 </head>
 
-<body>
+<body onload="loader()">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39H2H7"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div id="loader" class="dots-loader"></div>
 <section id="section-first">
   <header>
     <div class="logo-bananart"><img src="img/logo_bananart_blanc.png" alt="logo"></div>

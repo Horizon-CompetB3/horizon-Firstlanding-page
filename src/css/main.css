@@ -27,9 +27,11 @@ body {
   height: 100%;
   position: absolute;
   overflow-y: hidden;
+
 }
 
 header {
+  width: 100%;
 
 }
 
@@ -37,9 +39,85 @@ header h1 {
   text-align: center;
   font-family: "Montserrat-Bold", sans-serif;
   color: #fff;
+  font-size: 2.3vw;
+  width: 90%;
+  margin: auto;
+}
+/* LOADER */
+.loading * {
+  display: none;
 }
 
+.dots-loader:not(:required) {
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-radius: 100%;
+  box-shadow: #FFD503 -14px -14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  animation: dots-loader 5s infinite ease-in-out;
+  transform-origin: 50% 50%;
+  transform: scale(1);
+  transition: .3s all;
+}
 
+@keyframes dots-loader {
+  0% {
+    box-shadow: #FFD503 -14px -14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  }
+  8.33% {
+    box-shadow: #FFD503 14px -14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  }
+  16.67% {
+    box-shadow: #FFD503 14px 14px 0 7px, #FFB300 14px 14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  }
+  25% {
+    box-shadow: #FFD503 -14px 14px 0 7px, #FFB300 -14px 14px 0 7px, #7BD1A8 -14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  }
+  33.33% {
+    box-shadow: #FFD503 -14px -14px 0 7px, #FFB300 -14px 14px 0 7px, #7BD1A8 -14px -14px 0 7px, #2FC2AD -14px -14px 0 7px;
+  }
+  41.67% {
+    box-shadow: #FFD503 14px -14px 0 7px, #FFB300 -14px 14px 0 7px, #7BD1A8 -14px -14px 0 7px, #2FC2AD 14px -14px 0 7px;
+  }
+  50% {
+    box-shadow: #FFD503 14px 14px 0 7px, #FFB300 -14px 14px 0 7px, #7BD1A8 -14px -14px 0 7px, #2FC2AD 14px -14px 0 7px;
+  }
+  58.33% {
+    box-shadow: #FFD503 -14px 14px 0 7px, #FFB300 -14px 14px 0 7px, #7BD1A8 -14px -14px 0 7px, #2FC2AD 14px -14px 0 7px;
+  }
+  66.67% {
+    box-shadow: #FFD503 -14px -14px 0 7px, #FFB300 -14px -14px 0 7px, #7BD1A8 -14px -14px 0 7px, #2FC2AD 14px -14px 0 7px;
+  }
+  75% {
+    box-shadow: #FFD503 14px -14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px -14px 0 7px, #2FC2AD 14px -14px 0 7px;
+  }
+  83.33% {
+    box-shadow: #FFD503 14px 14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD 14px 14px 0 7px;
+  }
+  91.67% {
+    box-shadow: #FFD503 -14px 14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  }
+  100% {
+    box-shadow: #FFD503 -14px -14px 0 7px, #FFB300 14px -14px 0 7px, #7BD1A8 14px 14px 0 7px, #2FC2AD -14px 14px 0 7px;
+  }
+}
+
+.loaded .dots-loader {
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  transform: scale(0);
+}
+/* */
 h2 {
     font-family: "Montserrat-Medium", sans-serif;
 }
@@ -88,28 +166,25 @@ span {
 
 #section-first {
       background: linear-gradient(to right, #7BD1A8 , #2FC2AD);
+  background-image: url("../img/home-background.jpg");
+  display: none;
 }
 
 #btn-artiste {
-    background-color: #fff;
-  --buttondBgColorHover: #3AB795;
+    background-color: #FFD503;
+  color: #FFF;
 
 }
-#btn-artiste:hover {
-  background-color: #FFD503;
-  color: #fff;
-  transition: 0.5s;
- }#btn-entreprise:hover {
-  background-color: #ffff;
-    color: #FFD503;
+#btn-artiste:hover, #btn-entreprise:hover {
+  background-color: #FFF;
+  color: #3F3F3F;
   transition: 0.5s;
  }
 
 
 
-
 #btn-entreprise {
-    background-color: #FFD503;
+    background-color: #FFB300;
     color: #fff;
 }
 .logo-bananart{
@@ -150,7 +225,8 @@ span {
 }
 
 .div-photo img {
-    width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 
 }
 #entreprise .div-photo img{
@@ -206,14 +282,14 @@ span {
 .artiste {
   transition: 0.5s;
   top: -100vh;
-  height: 100vh;
+  height: 100%;
 }
 
 .entreprise {
   transition: 0.5s;
   position: relative;
   top: 0vh;
-  height: 100vh;
+  height: 100%;
 }
 
 .scroll-artiste {
@@ -280,115 +356,3 @@ span {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 600px) {
-
-
-.logo-bananart img {
-    width: 25%;
-    position: absolute;
-    top:2%;
-    left:38%;
-}
-
-.titre {
-  margin-top: 40%;
-}
-.artiste, .entreprise{
-  height: 100vh;
-}
-body{height: 100%
-}
-
-
-.btn-first {
-  background: transparent;
-  border: 0 solid black;
-  padding: 5%;
-  font-size: 3.5vw;
-  text-transform: uppercase;
-  width: 70%;
-  margin: 4%;
-
-}
-#cont-btn {
-  width: 80%;
-  margin: auto;
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-
-}
-#cont-intro-text p {
-  font-size: 2vh;
-}
-
-
-h2 {
-  font-size: 6vw;
-}
-
-#cont-intro-text {
-  width: 80%;
-  margin: auto;
-  margin-top: 15%;
-  font-size: 1.5vw;
-}
-
-
-.div-photo {
-  display: none;
-}
-
-.div-content {
-  height: 100%;
-  width: 100%;
-}
-
-.div-description {
-    margin-top: 6%;
-    width: 90%;
-    font-size: 2.1vh;
-}
-
-.input-text {
-  padding: 3%;
-  font-size: 2.2vh;
-  color: #000;
-  width: 70%;
-  margin: 3%;
-  border: 1px grey solid;
-}
-
-.submit {
-  padding: 4%;
-  font-size: 2.2vh;
-  text-transform: uppercase;
-  color: #fff;
-  margin-top: 3%;
-  width: 40%;
-}
-
-.reseaux {
-  margin-top: 18%;
-}
-
-  .scroll-entreprise {
-    background-color: #fff;
-    top: -100vh;
-    transition: 0.5s;
-    color: #000;
-    height: 100%;
-  }
-.little-text {
-  width: 100%;
-  font-size: 1.2vh;
-  margin-top: 3%;
-}
-
-.close {
-font-size: 2.2vh;
-}
-
-}
