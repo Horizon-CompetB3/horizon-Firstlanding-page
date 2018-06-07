@@ -57,10 +57,10 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 <section id="section-first">
   <header>
     <div class="logo-bananart"><img src="img/logo_bananart_blanc.png" alt="logo"></div>
-      <div class="titre"><h1><span>Banan'Art</span>, soutenir l'art <br/>sans gaspillage</h1></div>
+      <div class="titre"><h1><span>Banan'Art</span>, des matériaux de qualité<br/>pour créer à moindre coût ! </h1></div>
   </header>
   <div id="cont-intro-text">
-    <p>Banna'Art permet aux entreprises de recycler leurs rebuts tout en permettant aux artistes de se fournir en matières premières à moindre coût.</p>
+    <p>Banan’art récupère les rebuts d’entreprises et les revalorise pour en faire des matériaux utilisables par les créatifs. Amateurs comme professionnels, vous y trouverez votre bonheur !</p>
   </div>
   <div id="cont-btn">
     <button id="btn-artiste" class="btn-first" onclick="scrollArt()">Artiste</button>
@@ -75,11 +75,9 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
   <div class="div-content">
     <button class="close" onclick="closeArtEnt()">X</button>
     <div class="div-text">
-      <h2>Cherchez l’inspiration, on cherche les matériaux</h2>
+      <h2>Cherchez l’inspiration, on s’occupe du reste</h2>
       <div class="div-description">
-        <p>Artiste, vous fournir en matières premières vous coûtent
-        cher et vous prend du temps ?<br/>
-        En récupérant des matériaux auprès des entreprises, Banan'Art  vous fournit en matières premières de toutes sortes, rapidement et à moindre coût.<br/><br/><br/>
+        <p>Artistes et artisans, les prix ne devrait pas freiner votre créativité!<br/> Notre plateforme propose tous types de matériaux revalorisés, à moindre coût, pour vous permettre de créer sans vous ruiner. En bonus ? Livraison rapide !<br/><br/><br/>
         Tenez-vous au courant en vous inscrivant à la Newsletter !</p>
       </div>
       <form method="post" action="" class="formulaire">
@@ -100,7 +98,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 
       </div>
       <div>
-        <p class="little-text">Banna'Art est seule destinataire des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de modification, de rectification et de suppression de ces données. Pour l’exercer, vous pouvez envoyer un e-mail à l’adresse suivante : bananart.entreprise@gmail.com</p></div>
+        <p class="little-text">Banan'Art est seule destinataire des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de modification, de rectification et de suppression de ces données. Pour l’exercer, vous pouvez envoyer un e-mail à l’adresse suivante : bananart.entreprise@gmail.com</p></div>
     </div>
   </div>
 
@@ -113,16 +111,13 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
   <div class="div-content">
     <button class="close" onclick="closeArtEnt()">X</button>
     <div class="div-text">
-      <h2>Devenez mécène sans même dépenser </h2>
+      <h2>Réduisez vos coûts</h2>
       <div class="div-description">
-        <p>Votre entreprise génère des rebuts ?
-        Leurs gestions représentent un coût et une perte de temps ?
-        Faites du recyclage ou encore mieux : de l’upcyclage !<br/>
-        En cédant vos rebuts vous faciliterez ainsi le travail des artistes tout en vous débarrassant de vos rebuts et surplus.<br/><br/><br/>
+        <p>Votre entreprise génère des rebuts ? Banan’art les récupère ! Plus de prestataires à payer, et des artistes comblés.<br/><br/><br/>
         Tenez-vous au courant en vous inscrivant à la Newsletter !</p>
       </div>
       <form method="post" action="" class="formulaire">
-        <input type="text" class="input-text" id="nameInput-ent" placeholder="nom" name="nameent">
+        
         <input type="text" class="input-text" id="mailInput-ent" placeholder="Adresse email" name="mailent"> <br>
         <span id="error_message-ent" class="text-danger"></span>
         <span id="success_message-ent" class="text-success"></span>
