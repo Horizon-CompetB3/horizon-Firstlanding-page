@@ -1,5 +1,6 @@
 @media only screen and (max-width: 600px) {
-
+    
+    
 
   .logo-bananart img {
     width: 25%;
@@ -78,6 +79,12 @@
     width: 90%;
     font-size: 2.1vh;
   }
+    
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
 
   .input-text {
     padding: 3%;
@@ -94,7 +101,7 @@
     text-transform: uppercase;
     color: #fff;
     margin-top: 3%;
-    width: 40%;
+    width: 50%;
   }
 
   .reseaux {
