@@ -141,6 +141,10 @@ span {
     color: #FFD503;
 }
 
+.span-titre{
+  color: #FFF;
+  font-size: 4vw;
+}
 
 .btn-first {
   background: transparent;
@@ -172,7 +176,7 @@ span {
 }
 
 #btn-artiste {
-    background-color: #FFD503;
+    background-color: #EF5E4D;
   color: #FFF;
 
 }
@@ -185,7 +189,7 @@ span {
 
 
 #btn-entreprise {
-    background-color: #FFB300;
+    background-color: #D63D2A;
     color: #fff;
 }
 .logo-bananart{
@@ -256,7 +260,7 @@ span {
 }
 
 .submit {
-  background: #2FC2AD;
+  background: #D63D2A;
   border: 0 solid black;
   padding: 2%;
   font-size: 2.2vh;

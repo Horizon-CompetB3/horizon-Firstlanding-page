@@ -57,7 +57,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 <section id="section-first">
   <header>
     <div class="logo-bananart"><img src="img/logo_bananart_blanc.png" alt="logo"></div>
-      <div class="titre"><h1><span>Banan'Art</span>, des matériaux de qualité<br/>pour créer à moindre coût ! </h1></div>
+    <div class="titre"><h1><span class="span-titre">Banan'Art,</span></br> des matériaux de qualité<br/>pour créer à moindre coût ! </h1></div>
   </header>
   <div id="cont-intro-text">
     <p>Banan’art récupère les rebuts d’entreprises et les revalorise pour en faire des matériaux utilisables par les créatifs. Amateurs comme professionnels, vous y trouverez votre bonheur !</p>
