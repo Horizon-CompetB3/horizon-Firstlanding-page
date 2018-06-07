@@ -2,15 +2,14 @@
 
 
 include "inc/init.inc.php";
-if(isset($_POST['nameent'])){
+if(isset($_POST['mailent'])){
 
 if(!filter_var($_POST['mailent'],FILTER_VALIDATE_EMAIL))
 { echo "<script>$('#error_message-ent').html('Votre mail est invalide');</script>";
 }else {
 
-    $requeteInsertion = $pdo->prepare('INSERT INTO entmail (nameent, mailent) VALUES (:nameent, :mailent)');
+    $requeteInsertion = $pdo->prepare('INSERT INTO entmail (mailent) VALUES (:mailent)');
     $requeteInsertion->bindValue('mailent', $_POST['mailent'], PDO::PARAM_STR);
-    $requeteInsertion->bindValue('nameent', $_POST['nameent'], PDO::PARAM_STR);
     $requeteInsertion->execute();
 
 
@@ -42,18 +41,19 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
   <title>Banan'Art</title>
   <meta name="description" content="Banna'Art permet aux entreprises de recycler leurs rebuts tout en permettant aux artistes de se fournir en matières premières">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <meta name="author" content="Horizon">
   <meta name="copyright" content="Horizon">
   <link rel="icon" type="image/png" href="img/logo_bananart_blanc.png" />
 </head>
 
-<body>
+<body onload="loader()">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39H2H7"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div id="loader" class="dots-loader"></div>
 <section id="section-first">
   <header>
     <div class="logo-bananart"><img src="img/logo_bananart_blanc.png" alt="logo"></div>
@@ -90,13 +90,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 
       </form>
 
-      <div class="reseaux">
-        <a target="_blank" href="https://www.linkedin.com/company/banan-art/"><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.instagram.com/bananartaetco/"><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
-        <a target="_blank" href="https://twitter.com/Bananartetco"><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
-
-      </div>
+      <?php include 'inc/rs.inc.php'; ?>
       <div>
         <p class="little-text">Banan'Art est seule destinataire des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de modification, de rectification et de suppression de ces données. Pour l’exercer, vous pouvez envoyer un e-mail à l’adresse suivante : bananart.entreprise@gmail.com</p></div>
     </div>
@@ -117,7 +111,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
         Tenez-vous au courant en vous inscrivant à la Newsletter !</p>
       </div>
       <form method="post" action="" class="formulaire">
-        
+
         <input type="text" class="input-text" id="mailInput-ent" placeholder="Adresse email" name="mailent"> <br>
         <span id="error_message-ent" class="text-danger"></span>
         <span id="success_message-ent" class="text-success"></span>
@@ -126,13 +120,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 
       </form>
 
-      <div class="reseaux">
-        <a target="_blank" href="https://www.linkedin.com/company/banan-art/"><img src="img/rs/twitter.png" alt="twitter" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.facebook.com/bananartetco/"><img src="img/rs/facebook.png" alt="facebook" class="icon-reseaux"></a>
-        <a target="_blank" href="https://www.instagram.com/bananartaetco/"><img src="img/rs/instagram.png" alt="instagram" class="icon-reseaux"></a>
-        <a target="_blank" href="https://twitter.com/Bananartetco"><img src="img/rs/linkedin.png" alt="linkedin" class="icon-reseaux"></a>
-
-      </div>
+      <?php include 'inc/rs.inc.php'; ?>
       <div>
         <p class="little-text">Banan'Art est seule destinataire des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de modification, de rectification et de suppression de ces données. Pour l’exercer, vous pouvez envoyer un e-mail à l’adresse suivante : bananart.entreprise@gmail.com</p></div>
     </div>
@@ -176,10 +164,9 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
 </script>
 <script> $(document).ready(function(){
     $('#submit-ent').click(function(){
-      var nameent = $('#nameInput-ent').val();
       var mailent = $('#mailInput-ent').val();
       var myRegex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
-      if(nameent == '' || mailent == '')
+      if(mailent == '')
       {
         $('#error_message-ent').html("Vous devez remplir l'ensemble des champs");
       }
@@ -192,7 +179,7 @@ if(!filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL))
         $.ajax({
           url:"index.php",
           method:"POST",
-          data:{nameent:nameent, mailent:mailent},
+          data:{mailent:mailent},
           success:function(data){
             $("form").trigger("reset");
             setTimeout(function(){

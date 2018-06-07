@@ -8,10 +8,24 @@
     left:38%;
   }
 
-  .titre {
-    margin-top: 40%;
+  header h1{
+
+    font-size: 1.5em;
   }
 
+  .titre {
+    margin-top: 35%;
+  }
+  .artiste, .entreprise{
+    height: 100vh;
+  }
+  body{height: 100vh
+
+  }
+  #section-first{
+    background-size: 300%;
+    height: 100vh;
+  }
 
   .btn-first {
     background: transparent;
@@ -34,7 +48,7 @@
 
   }
   #cont-intro-text p {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
 
@@ -45,17 +59,17 @@
   #cont-intro-text {
     width: 80%;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: 1.5vw;
   }
 
 
   .div-photo {
-    width: 0%;
+    display: none;
   }
 
   .div-content {
-    height: 100%;
+    height: 100vh;
     width: 100%;
   }
 
@@ -87,7 +101,13 @@
     margin-top: 18%;
   }
 
-
+  .scroll-entreprise {
+    background-color: #fff;
+    top: -100vh;
+    transition: 0.5s;
+    color: #000;
+    height: 100vh;
+  }
   .little-text {
     width: 100%;
     font-size: 1.2vh;
@@ -95,7 +115,8 @@
   }
 
   .close {
-    font-size: 2.2vh;
+    font-size: 5vh;
+    right: -92%;;
   }
 
 }
