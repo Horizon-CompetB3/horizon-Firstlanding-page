@@ -8,7 +8,7 @@ ini_set("display_errors",1);
 define('SGBD', 'mysql'); // type de bdd
 define('HOSTNAME', 'localhost'); //domaine du serveur
 define('USER', 'root'); // nom utilisateur
-define('PASSWORD', 'root'); // pour utilisateur mac
+define('PASSWORD', ''); // pour utilisateur mac
 define('DATABASE', 'bananart'); // nom de la base de donnée
 
 $options = array(
