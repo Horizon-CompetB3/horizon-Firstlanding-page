@@ -23,8 +23,8 @@ if (isset($_POST['mailent'])) {
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>LUGH</title>
-  <meta name="description"
-        content="Banna'Art permet aux entreprises de recycler leurs rebuts tout en permettant aux artistes de se fournir en matières premières">
+  <meta name="description" content="Avec Lugh, trouvez le projet qui correspond à votre entreprise pour véhiculer vos valeurs et dynamiser votre image.</h3>
+  <p>Déposez un appel à projet en ligne et séléctionnez la meilleure proposition pour vos locaux ">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
