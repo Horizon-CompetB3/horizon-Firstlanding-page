@@ -144,6 +144,7 @@ header h1 {
   z-index: 2;
   margin-right: 3%;
   margin-top: 2%;
+  width: 10%;
 }
 #btn-artiste{
   background-color: transparent;
@@ -186,7 +187,7 @@ header h1 {
   font-size: 1.3vw;
   text-align: center;
 }
-#section-landing p{
+.text-p-landing{
   text-align: center;
   /* margin-top: 2%; */
   font-size: 1.1vw;
@@ -229,6 +230,17 @@ form h3{
   width: 60%;
   /* position:  absolute; */
 }
+#submit-ent{
+  width: 100%;
+  background-color: #C73421;
+  height: 100%;
+  color: #ffffff;
+  border-bottom-right-radius: 2vw;
+  border-top-right-radius: 2vw;
+  border: 6px solid #C73421;
+  font-size:  1.3vw;
+  font-weight:  600;
+}
 #submit{
   width: 100%;
   background-color: #C73421;
@@ -254,12 +266,30 @@ form h3{
   right:  0;
   outline: none;
 }
+#mailInput-art{
+  width: 100%;
+  padding: 3Vh;
+  border-bottom-left-radius: 2vw;
+  border-top-left-radius: 2vw;
+  border: 1px solid #979797;
+  position: relative;
+  right:  0;
+  outline: none;
+}
 #rgpd{
   width: 100%;
   margin: auto;
   text-align: center;
   font-size: 0.7vw;
-  margin-top: 15vh;
+  margin-top: 12vh;
   /* bottom: 2%; */
   position:  absolute;
+}
+.min-link{
+  width: 70%;
+  font-size: 0.7vw;
+  font-weight: 300;
+  display: block;
+  margin: auto;
+  margin-top: 2%;
 }

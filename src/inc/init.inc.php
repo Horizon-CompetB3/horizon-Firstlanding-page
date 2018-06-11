@@ -9,7 +9,7 @@ define('SGBD', 'mysql'); // type de bdd
 define('HOSTNAME', 'localhost'); //domaine du serveur
 define('USER', 'root'); // nom utilisateur
 define('PASSWORD', ''); // pour utilisateur mac
-define('DATABASE', 'bananart'); // nom de la base de donnée
+define('DATABASE', 'lugh'); // nom de la base de donnée
 
 $options = array(
   PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8", //gérer l'encodage
