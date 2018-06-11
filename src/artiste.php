@@ -9,7 +9,7 @@ if (isset($_POST['mail'])) {
   if (!filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
   } else {
 
-    $requeteInsertion = $pdo->prepare('INSERT INTO mail (mail) VALUES (:mail)');
+    $requeteInsertion = $pdo->prepare('INSERT INTO artiste (mail) VALUES (:mail)');
     $requeteInsertion->bindValue('mail', $_POST['mail'], PDO::PARAM_STR);
     $requeteInsertion->execute();
 
@@ -34,7 +34,7 @@ if (isset($_POST['mail'])) {
   <link rel="icon" type="image/png" href="img/SVG/logo%20lugh.svg"/>
 </head>
 
-<body onload="loader()">
+<body>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39H2H7"
@@ -79,12 +79,12 @@ if (isset($_POST['mail'])) {
   <h1>Créez et exposez
     <br>sans rien dépenser ! </h1>
   <h3 id="text-1">Avec Lugh, bénéficier d’appel d’offres privilégiées.</h3>
-  <p>Proposez vos oeuvres à des entreprises qui souhaitent exposer dans leur locaux.<br> Profitez ainsi d’un coup de projecteur sur votre talent et d’une opportunité de<br> vendre votre création.</p>
+  <p class="text-p-landing">Proposez vos oeuvres à des entreprises qui souhaitent exposer dans leur locaux.<br> Profitez ainsi d’un coup de projecteur sur votre talent et d’une opportunité de<br> vendre votre création.</p>
   <form method="post" action="" class="formulaire">
     <h3>Inscrivrez vous à notre newsletter hebdomadaire pour rester en contact !</h3>
     <div class="input">
       <div class="div-input">
-        <input type="text" class="input-text" id="mailInput-ent" placeholder="email" name="mail">
+        <input type="text" class="input-text" id="mailInput-art" placeholder="email" name="mail">
       </div>
       <div class="div-submit">
         <input id="submit" class="submit" type="button" name="envoyer" value="ENVOYER">
@@ -92,17 +92,20 @@ if (isset($_POST['mail'])) {
     </div>
     <span id="error_message" class="text-danger"></span>
     <span id="success_message" class="text-success"></span>
+      <a href="index.php" class="min-link">Je suis une entreprise</a>
 
 
   </form>
+    <?php include 'inc/rs.inc.php' ?>
+    <p id="rgpd">Lugh est seule destinateur des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès,<br>
+        de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un e-mail  l’adresse suivante : <b>Lugh.entreprise@gmail.com</b></p>
+
 </section>
 
 
-<?php include 'inc/rs.inc.php' ?>
-<p id="rgpd">Lugh est seule destinateur des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès,<br>
-  de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un e-mail  l’adresse suivante : <b>Lugh.entreprise@gmail.com</b></p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+
 <script>$(document).ready(function () {
     $('#submit').click(function () {
       var mail = $('#mailInput-art').val();
@@ -116,9 +119,9 @@ if (isset($_POST['mail'])) {
       else {
         $('#error_message').html('');
         $.ajax({
-          url: "index.php",
+          url: "artiste.php",
           method: "POST",
-          data: {name: name, mail: mail},
+          data: {mail: mail},
           success: function (data) {
             $("form").trigger("reset");
             setTimeout(function () {

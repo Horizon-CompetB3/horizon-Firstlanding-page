@@ -5,13 +5,12 @@ include "inc/init.inc.php";
 if (isset($_POST['mailent'])) {
 
   if (!filter_var($_POST['mailent'], FILTER_VALIDATE_EMAIL)) {
-    echo "<script>$('#error_message-ent').html('Votre mail est invalide');</script>";
+
   } else {
 
-    $requeteInsertion = $pdo->prepare('INSERT INTO entmail (mailent) VALUES (:mailent)');
+    $requeteInsertion = $pdo->prepare('INSERT INTO entreprise (mailent) VALUES (:mailent)');
     $requeteInsertion->bindValue('mailent', $_POST['mailent'], PDO::PARAM_STR);
     $requeteInsertion->execute();
-
 
   }
 }
@@ -77,28 +76,29 @@ if (isset($_POST['mailent'])) {
 <section id="section-landing">
   <h1>Choisissez l'art</br> pour être unique !</h1>
   <h3 id="text-1">Avec Lugh, trouvez le projet qui correspond à votre entreprise pour véhiculer vos valeurs et dynamiser votre image.</h3>
-  <p>Déposez un appel à projet en ligne et séléctionnez la meilleure proposition pour vos locaux</p>
+  <p class="text-p-landing">Déposez un appel à projet en ligne et séléctionnez la meilleure proposition pour vos locaux</p>
   <form method="post" action="" class="formulaire">
     <h3>Inscrivrez vous à notre newsletter hebdomadaire pour rester en contact !</h3>
     <div class="input">
       <div class="div-input">
-      <input type="text" class="input-text" id="mailInput-ent" placeholder="email" name="mail">
+      <input type="text" class="input-text" id="mailInput-ent" placeholder="email" name="mailent">
       </div>
       <div class="div-submit">
-      <input id="submit" class="submit" type="button" name="envoyer" value="ENVOYER">
+      <input id="submit-ent" class="submit" type="button" name="envoyer" value="ENVOYER">
       </div>
     </div>
     <span id="error_message" class="text-danger"></span>
     <span id="success_message" class="text-success"></span>
-
+      <a href="artiste.php"  class="min-link">Je suis un artiste</a>
 
   </form>
+    <?php include 'inc/rs.inc.php' ?>
+    <p id="rgpd">Lugh est seule destinateur des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès,<br>
+        de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un e-mail  l’adresse suivante : <b>Lugh.entreprise@gmail.com</b></p>
+
 </section>
 
 
-<?php include 'inc/rs.inc.php' ?>
-<p id="rgpd">Lugh est seule destinateur des informations saisies, qui ne seront pas commercialisées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès,<br>
-  de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un e-mail  l’adresse suivante : <b>Lugh.entreprise@gmail.com</b></p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 
