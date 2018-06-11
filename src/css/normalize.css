@@ -1,16 +1,80 @@
 @media only screen and (max-width: 700px) {
 
   #Calque_1{
-    width: 0;
+    display: none;
+  }
+  #Calque_2{
+    display: none;
+  }
+  #Calque_4{
+    display: block;
+    position: fixed;
+    width: 45%;
+    right: 30%;
+    top: -18%;
+  }
+  #Calque_5{
+    width: 240%;
+    position: absolute;
+    left: -70%;
+    top: 60%;
+    z-index:  -20;
+    margin-top: 23%;
+  }
+ .logo-lugh{
+   width: 40%;
+   margin: auto;
+   margin-top: 40%;
+ }
+  #burger-ctr {
+    display: block;
+    width: 12%;
+    /* margin: 0 auto; */
+    height: 12vw;
+    position: relative;
+    padding: 12.5px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    top: 15%;
+    right: 15%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index:  230;
   }
 
-  #Calque_2 {
-    width: 0;
+  .bar {
+    height: 25%;
+    background: white;
+    margin-bottom: 20%;
+    border-radius: 50px;
+    position: relative;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
   }
 
-  #Calque_3{
-    width: 0;
+  .bar.bottom {
+    margin-bottom: 0;
   }
+
+  .head {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 25%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
 
 
   #section-landing h1{
@@ -21,30 +85,34 @@
     font-weight: 800;
     text-align: center;
     margin-top: 14%;
+
+  }
+  #section-landing{
+    height: auto;
   }
 
   #text-1{
-    width: 90%;
+    width: 80%;
     margin: auto;
     z-index: 100;
     margin-top: 10%;
-    font-size: 3.3vw;
+    font-size: 6vw;
     text-align: center;
+    line-height: 140%;
   }
 
-  #section-landing p{
+  .text-p-landing{
     text-align: center;
-    font-size: 3.3vw;
+    font-size: 4.5vw;
     width: 90%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 10%;
+    line-height: 190%;
   }
 
 
   #cont-btn {
-    z-index: 2;
-    margin-right: 5%;
-    margin-top: 2%;
+    display: none;
   }
 
   #btn-artiste{
@@ -66,29 +134,60 @@
 
   form {
     width: 90%;
-    margin-top: 12%;
+    margin-top: 20%;
+  }
+  form h3{
+    color: white;
+  }
+  #form-ent{
+    /* background-image: url("../img/SVG/Group.svg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 170%; */
+    /* background-position-y: 50%; */
+    margin-top: 50%;
   }
 
   .input{
-    display: flex;
+    display: block;
     margin-top: 7%;
-    justify-content:  space-around;
+    /* justify-content:  space-around; */
     width: 90%;
+    /* z-index: 150; */
   }
 
   .div-input{
-    width: 42%;
+    width: 90%;
   }
 
   .div-submit{
-     width: 38%;
+     width: 90%;
+     z-index:  200;
+     margin:  auto;
    }
+  #submit-ent{
 
+font-size:  5vw;
+
+width: 100%;
+
+display:  block;
+
+/* margin: auto; */
+
+border-radius:  5vw;
+
+margin-top:  5%;
+
+/* display:  block; */
+  }
   #mailInput-ent {
     width: 98%;
-    padding: 14%;
-    border-bottom-left-radius: 5vw;
-    border-top-left-radius: 5vw;
+    /* padding: 14%; */
+    position: initial;
+    /* margin: auto; */
+    /* left: 0; */
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 
   #submit{
@@ -104,17 +203,18 @@
     width: 85%;
     margin: auto;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3.3vw;
     margin-top: 17vh;
     position: absolute;
-    bottom: 2%;
+    /* bottom: 2%; */
     left: 6%;
+    line-height:  190%;
   }
 
   .reseaux{
     margin: auto;
     width: 2%;
-    position: absolute;
+    /* position: absolute; */
     right: 45%;
     bottom: 4%;
     display: flex;

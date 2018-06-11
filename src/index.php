@@ -67,17 +67,81 @@ if (isset($_POST['mailent'])) {
           d="M1424.16,802.09c-3.11-12.56-11.6-20-23.76-22.28-27-5-41.56-23.57-52-46.62-11-24.19-16.37-50-20.21-76.1-4.05-27.55-6.13-55.27-7.31-83.1-1.74-41.32-1-82.64-.65-124,.23-29.31,1.19-58.63,2-87.93.76-28.17-7.49-53.22-22.7-76.33-28.3-43-64.7-77.34-110.42-101.27-17.7-9.26-36.39-15.82-57-14.58-13.28.81-25.47,5.07-33.07,16.08-15.46,22.4-37.93,29.66-63.21,32-30.51,2.85-60.55-1.46-90.46-6.54-49.5-8.4-98.1-20.91-146.77-33.06C747,165.55,695.45,152.65,643.08,143.29c-34.23-6.12-65.63-.16-93.53,21.3-3,2.33-5.87,4.91-8.81,7.37,10.86-30.2,26-57.7,50.88-78.75C613,75.12,638,66.89,665.9,67.69c26.14.75,51.36,7.37,76.69,12.87,55.27,12,109.87,26.79,164.88,39.88,35.3,8.4,70.71,16.25,106.71,21,27.31,3.61,54.69,6,82.06.53,17.6-3.52,33.28-10.41,44.06-25.79,12.45-17.76,30.3-22.52,50.61-19.67,25.46,3.57,47.75,15.1,68.62,29.49,38.11,26.27,69.92,58.5,92.36,99.33,9.18,16.72,14.41,34.56,14.59,53.87.36,37.67-1.18,75.3-1.88,113-.95,50.67-.77,101.31,3.6,151.84,3.11,36,7.94,71.82,20.85,105.94,6,15.7,13.55,30.43,26.27,41.9,6.65,6,14.15,10.41,23,12.34a91.55,91.55,0,0,1,11.5,3.31c14.67,5.31,21.1,17.13,17.72,32.43a73,73,0,0,1-9.75,22.84C1448.57,777.55,1437.06,790.42,1424.16,802.09Z"/>
   </svg>
 </div>
+<div><svg id="Calque_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 331.847 456.148">
+    <defs>
+      <style>
+        .cls-9 {
+          fill: #f5a623;
+        }
+
+        .cls-10 {
+          fill: #d9931f;
+        }
+
+        .cls-11 {
+          fill: #ae7519;
+        }
+
+        .cls-12 {
+          filter: url(#Path_2);
+        }
+      </style>
+      <filter id="Path_2" x="0" y="46.504" width="331.847" height="409.643" filterUnits="userSpaceOnUse">
+        <feOffset dy="2" input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="5.5" result="blur"/>
+        <feFlood flood-opacity="0.502"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+      </filter>
+    </defs>
+    <g id="Groupe_1" data-name="Groupe 1" transform="translate(-123.128 242.912)">
+      <g class="cls-12" transform="matrix(1, 0, 0, 1, 123.13, -242.91)">
+        <path id="Path_2-2" data-name="Path 2" class="cls-9" d="M19.554,24.4s75.1-48.8,98.024,0,38.99,119.776,67.1,119.776,21.162,66.108,0,81.553-113.145,61.909-100.37,91.4-76.054,9.1-82.854-29.492S19.554,24.4,19.554,24.4Z" transform="translate(316.5 374.04) rotate(161)"/>
+      </g>
+      <path id="Path_2_Copy" data-name="Path 2 Copy" class="cls-10" d="M18.642,23.261s71.6-46.522,93.453,0,37.172,114.19,63.975,114.19,20.175,63.025,0,77.75S68.2,274.223,80.38,302.34s-72.507,8.68-78.99-28.116S18.642,23.261,18.642,23.261Z" transform="translate(434.634 91.523) rotate(161)"/>
+      <path id="Path_2_Copy_2" data-name="Path 2 Copy 2" class="cls-11" d="M18.642,23.261s71.6-46.522,93.453,0,37.172,114.19,63.975,114.19,20.175,63.025,0,77.75S68.2,274.223,80.38,302.34s-72.507,8.68-78.99-28.116S18.642,23.261,18.642,23.261Z" transform="translate(434.634 55.523) rotate(161)"/>
+    </g>
+  </svg>
+</div>
 <header>
   <div class="logo-lugh"><img src="img/SVG/logo%20lugh.svg" alt="logo"></div>
   <div id="cont-btn">
   <a href="artiste.php" ><button id="btn-artiste" class="btn-first">Artiste</button></a>
   </div>
+
+  <div id="burger-ctr">
+    <div class="head"></div>
+    <div class="bar top"></div>
+    <div class="bar center"></div>
+    <div class="bar bottom"></div>
+  </div>
+  <div class="logo-lugh-mob"><img src="img/SVG/logo%20lugh.svg" alt="logo"></div>
 </header>
 <section id="section-landing">
   <h1>Choisissez l'art</br> pour être unique !</h1>
   <h3 id="text-1">Avec Lugh, trouvez le projet qui correspond à votre entreprise pour véhiculer vos valeurs et dynamiser votre image.</h3>
   <p class="text-p-landing">Déposez un appel à projet en ligne et séléctionnez la meilleure proposition pour vos locaux</p>
-  <form method="post" action="" class="formulaire">
+  <form method="post" action="" class="formulaire" id="form-ent">
+    <svg id="Calque_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 954.727 953.266">
+      <defs>
+        <style>
+          .cls-18 {
+            fill: #5e4a8b;
+          }
+
+          .cls-23 {
+            clip-path: url(#clip-path);
+          }
+        </style>
+        <clipPath id="clip-path">
+          <path id="Mask" class="cls-18" d="M36.912,0s456.98,54.834,503.467,92.323C677.3,202.739,383.655,499.4,297.684,475.486,67.128,411.36,23.533,233.531,1.31,102.8-6.954,54.185,36.912,0,36.912,0Z" transform="matrix(-0.695, -0.719, 0.719, -0.695, 400.685, 746.555)"/>
+        </clipPath>
+      </defs>
+      <g id="Group" transform="translate(-0.917 698.392) rotate(-70)">
+        <path id="Mask-2" data-name="Mask" class="cls-18" d="M36.912,0s456.98,54.834,503.467,92.323C677.3,202.739,383.655,499.4,297.684,475.486,67.128,411.36,23.533,233.531,1.31,102.8-6.954,54.185,36.912,0,36.912,0Z" transform="matrix(-0.695, -0.719, 0.719, -0.695, 400.685, 746.555)"/>
+      </g>
+    </svg>
+
     <h3>Inscrivrez vous à notre newsletter hebdomadaire pour rester en contact !</h3>
     <div class="input">
       <div class="div-input">
