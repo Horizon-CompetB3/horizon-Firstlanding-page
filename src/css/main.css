@@ -31,6 +31,7 @@ html {
 
 body {
   height: 100vh;
+  position: initial;
 
 }
 #Calque_1{
@@ -56,13 +57,13 @@ body {
 #Calque_4{
   display: none;
 }
-#Calque_5{
-
+#Calque_7{
+  display: none;
 }
 
 header {
   width: 100%;
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
 }
 .logo-lugh{
@@ -184,7 +185,6 @@ header h1 {
 #section-landing{
   width: 100%;
   margin-top: 5%;
-  height: 100vh;
 }
 #section-landing h1{
   font-size: 2vw;
@@ -296,13 +296,12 @@ form h3{
   outline: none;
 }
 #rgpd{
-  width: 100%;
+  width: 60%;
+  display: block;
   margin: auto;
   text-align: center;
   font-size: 0.7vw;
   margin-top: 12vh;
-  /* bottom: 2%; */
-  position:  absolute;
 }
 .min-link{
   width: 70%;
@@ -311,4 +310,13 @@ form h3{
   display: block;
   margin: auto;
   margin-top: 2%;
+}
+#back-content img{
+  display: none;
+}
+#a-menu, #a-menu-2{
+  display: none;
+}
+#burger-button{
+  display: none;
 }

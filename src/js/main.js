@@ -1,26 +1,14 @@
-function scrollArt() {
-  var element = document.getElementById("artiste");
-  element.classList.add("scroll-artiste");
-
-};
-
-function scrollEnt() {
-  var element = document.getElementById("entreprise");
-  element.classList.add("scroll-entreprise");
-
-};
-
-function closeArtEnt() {
-  var element = document.getElementById("artiste");
-  element.classList.remove("scroll-artiste");
-  var elementTwo = document.getElementById("entreprise");
-  elementTwo.classList.remove("scroll-entreprise");
-
-
-};
-
-function sizeWindow(){
-  document.body.height = window.innerHeight;
+function openMenu() {
+    if ($('#Calque_7').hasClass('Calque_7-open')) {
+        var menu = document.getElementById("Calque_7");
+        menu.classList.remove("Calque_7-open");
+        document.getElementById("a-menu").classList.remove("a-menu-visible");
+        document.getElementById("a-menu-2").classList.remove("a-menu-visible");
+    } else {
+        var menu = document.getElementById("Calque_7");
+        menu.classList.add("Calque_7-open");
+        document.getElementById("a-menu").classList.add("a-menu-visible");
+        document.getElementById("a-menu-2").classList.add("a-menu-visible");
+    }
 }
-sizeWindow();
-
+;
