@@ -31,7 +31,7 @@ if (isset($_POST['mailent'])) {
     <link rel="icon" type="image/png" href="img/logo-lugh.svg"/>
 </head>
 
-<body onload="loader()">
+<body>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39H2H7"
@@ -227,10 +227,11 @@ if (isset($_POST['mailent'])) {
                 </div>
                 <div class="div-submit">
                     <input id="submit-ent" class="submit" type="button" name="envoyer" value="ENVOYER">
+                    <span id="error_message" class="text-danger"></span>
+                    <span id="success_message" class="text-success"></span>
                 </div>
             </div>
-            <span id="error_message" class="text-danger"></span>
-            <span id="success_message" class="text-success"></span>
+
             <a href="artiste.php" class="min-link">Je suis un artiste</a>
 
         </form>
@@ -258,13 +259,13 @@ if (isset($_POST['mailent'])) {
             var mailent = $('#mailInput-ent').val();
             var myRegex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
             if (mailent == '') {
-                $('#error_message-ent').html("Vous devez remplir l'ensemble des champs");
+                $('#error_message').html("L'email est vide");
             }
             if (!myRegex.test(mailent)) {
-                $('#error_message-ent').html("Votre mail est invalide");
+                $('#error_message').html("Votre mail est invalide");
             }
             else {
-                $('#error_message-ent').html('');
+                $('#error_message').html('');
                 $.ajax({
                     url: "index.php",
                     method: "POST",
@@ -272,7 +273,7 @@ if (isset($_POST['mailent'])) {
                     success: function (data) {
                         $("form").trigger("reset");
                         setTimeout(function () {
-                            $('#success_message-ent').html("Merci, votre mail a bien été enregistré");
+                            $('#success_message').html("Merci, votre mail a bien été enregistré");
                         }, 0);
                     }
                 });

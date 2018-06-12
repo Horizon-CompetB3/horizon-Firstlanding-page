@@ -184,7 +184,7 @@ if (isset($_POST['mail'])) {
   <p class="text-p-landing">Proposez vos oeuvres à des entreprises qui souhaitent exposer dans leur locaux.<br> Profitez ainsi d’un coup de projecteur sur votre talent et d’une opportunité de<br> vendre votre création.</p>
     <div id="back-content">
         <img src="img/Mask.svg">
-    <form method="post" action="" class="formulaire" id="form-ent">
+    <form method="post" action="" class="formulaire" id="form" class="form-ent">
     <h3>Inscrivrez vous à notre newsletter hebdomadaire pour rester en contact !</h3>
     <div class="input">
       <div class="div-input">
@@ -212,33 +212,31 @@ if (isset($_POST['mail'])) {
 <script src="js/main.js"></script>
 
 <script>$(document).ready(function () {
-    $('#submit').click(function () {
-      var mail = $('#mailInput-art').val();
-      var myRegex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
-      if (mail == '') {
-        $('#error_message').html("Vous devez remplir l'ensemble des champs");
-      }
-      if (!myRegex.test(mail)) {
-        $('#error_message').html("Votre mail est invalide");
-      }
-      else {
-        $('#error_message').html('');
-        $.ajax({
-          url: "artiste.php",
-          method: "POST",
-          data: {mail: mail},
-          success: function (data) {
-            $("form").trigger("reset");
-            setTimeout(function () {
-              $('#success_message').html("Merci, votre mail a bien été enregistré");
-              ;
-            }, 0);
-          }
+        $('#submit').click(function () {
+            var mail = $('#mailInput-art').val();
+            var myRegex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
+            if (mail == '') {
+                $('#error_message').html("L'email est vide");
+            }
+            if (!myRegex.test(mail)) {
+                $('#error_message').html("Votre mail est invalide");
+            }
+            else {
+                $('#error_message').html('');
+                $.ajax({
+                    url: "artiste.php",
+                    method: "POST",
+                    data: {mail: mail},
+                    success: function (data) {
+                        $("form").trigger("reset");
+                        setTimeout(function () {
+                            $('#success_message').html("Merci, votre mail a bien été enregistré");
+                        }, 0);
+                    }
+                });
+            }
         });
-      }
-
     });
-  });
 
 </script>
 
