@@ -41,7 +41,7 @@
   }
 
   form h3 {
-    font-size: 3.5vw;
+    font-size: 3.8vw;
     text-align: center;
   }
 
@@ -140,6 +140,19 @@
     bottom: 4%;
     left: 5%;
     color: white;
+  }
+
+  .redirection {
+    width: 100%;
+    margin-top: 2%;
+
+  }
+
+  .redirection a {
+    color: #FF4C49;
+    font-size: 2.5vw;
+    font-family: "Montserrat-Bold";
+    text-decoration: underline;
   }
 
 }

@@ -287,6 +287,7 @@ if (isset($_POST['mail'])) {
         <div class="div-input">
           <input type="text" class="input-text" id="mailInput-art" placeholder="email" name="mail">
         </div>
+        <div class="redirection"><a href="entreprise.php">Je suis une entreprise</a></div>
         <div class="div-submit">
           <input id="submit" class="submit" type="button" name="envoyer" value="ENVOYER">
         </div>
