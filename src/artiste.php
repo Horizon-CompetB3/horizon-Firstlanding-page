@@ -287,6 +287,7 @@ if (isset($_POST['mail'])) {
         <div class="div-input">
           <input type="text" class="input-text" id="mailInput-art" placeholder="email" name="mail">
         </div>
+        <div class="redirection"><a href="entreprise.php">Je suis une entreprise</a></div>
         <div class="div-submit">
           <input id="submit" class="submit" type="button" name="envoyer" value="ENVOYER">
         </div>
@@ -299,6 +300,7 @@ if (isset($_POST['mail'])) {
           Conformément au RGPD, vous disposez d’un droit d’accès,
           de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un
           e-mail l’adresse suivante : <b>Lugh.entreprise@gmail.com</b></p>
+        <img class="fond-degradé" src="img/mobile/Rectangle@2x.png" alt="fond-degradé">
       </div>
 
     </form>

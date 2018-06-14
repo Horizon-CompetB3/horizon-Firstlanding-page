@@ -585,6 +585,7 @@ if (isset($_POST['mailent'])) {
         <div class="div-input">
           <input type="text" class="input-text" id="mailInput-ent" placeholder="Email" name="mailent">
         </div>
+        <div class="redirection"><a href="artiste.php">Je suis un artiste</a></div>
         <div class="div-submit">
           <input id="submit-ent" class="submit" type="button" name="envoyer" value="ENVOYER">
           <span id="error_message" class="text-danger"></span>
@@ -599,6 +600,7 @@ if (isset($_POST['mailent'])) {
         Conformément au RGPD, vous disposez d’un droit d’accès,
         de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un
         e-mail l’adresse suivante : <b>Lugh.entreprise@gmail.com</b></p>
+      <img class="fond-degradé" src="img/mobile/Rectangle@2x.png" alt="fond-degradé">
     </div>
   </div>
 
