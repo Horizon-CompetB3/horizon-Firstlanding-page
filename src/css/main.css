@@ -59,13 +59,13 @@ h1 {
   position: absolute;
   right: 0%;
   width: 40%;
-  top: -27%;
+  top: -33%;
 }
 #svg-background-2{
   position: absolute;
   right: 0%;
   width: 50%;
-  top: -27%;
+  top: -33%;
 }
 #cont-btn{
   z-index: 2;
@@ -107,6 +107,9 @@ h1 {
   margin-left: 5%;
 }
 
+.redirection {
+  width: 0;
+}
 
 #text-1{
   width: 55%;
@@ -206,6 +209,15 @@ form h3{
 .reseaux{
   width: 30%;
 }
+
+.fond-degradé {
+  width: 0;
+}
+
+.reseaux-mobile {
+  width: 0;
+}
+
 .reseaux img{
   width: 12%;
 }
