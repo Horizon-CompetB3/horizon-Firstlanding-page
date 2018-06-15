@@ -56,15 +56,15 @@ h1 {
 }
 #svg-background{
   position: absolute;
-  right: 0%;
-  width: 40%;
-  top: -33%;
+  right: 0;
+  width: 38%;
+  top: -51%;
 }
 #svg-background-2{
   position: absolute;
-  right: 0%;
-  width: 50%;
-  top: -33%;
+  right: 0;
+  width: 38%;
+  top: -35%;
 }
 #cont-btn{
   z-index: 2;
@@ -79,7 +79,7 @@ h1 {
 .logo-lugh-mob{
   display: none;
 }
-#btn-artiste{
+#btn-entreprise{
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -94,11 +94,35 @@ h1 {
   font-size: 0.9vw;
   cursor: pointer;
 }
-#btn-artiste:hover{
+
+#btn-artiste{
+  background-color: transparent;
+  color: #FF4C49;
+  border: 2px solid #FF4C49;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 1vw;
+  text-transform: uppercase;
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-size: 0.9vw;
+  cursor: pointer;
+}
+
+#btn-entreprise:hover{
   background-color: #ffffff;
-  color: #a32b4d;
+  color: #FF4C49;
   transition: 0.5s;
 }
+
+#btn-artiste:hover {
+  background-color: #FF4C49;
+  color: white;
+  transition: 0.5s;
+}
+
 #section-landing{
   width: 70%;
   margin-top: 5%;
@@ -139,32 +163,33 @@ form h3{
 }
 .div-input{
   width: 60%;
-  Z-INDEX: -3;
-  /* position:  absolute; */
-}.div-submit{
-  width: 40%;
-  /* position:  absolute; */
+  Z-INDEX: 3;
 }
+
+.div-submit{
+  width: 40%;
+}
+
 #submit-ent{
   width: 100%;
-  background-color: #FF4C49;
+  background-color: #5BB59B;
   height: 100%;
   color: #ffffff;
   border-bottom-right-radius: 0.8vw;
   border-top-right-radius: 0.8vw;
-  border: 6px solid #FF4C49;
+  border: 6px solid #5BB59B;
   font-size:  1.3vw;
   font-weight:  600;
   cursor: pointer;
 }
 #submit{
   width: 100%;
-  background-color: #FF4C49;
+  background-color: #5BB59B;
   height: 100%;
   color: #ffffff;
   border-bottom-right-radius: 0.8vw;
   border-top-right-radius: 0.8vw;
-  border: 6px solid #FF4C49;
+  border: 6px solid #5BB59B;
   font-size:  1.3vw;
   font-weight:  600;
   z-index: 200;
@@ -178,10 +203,9 @@ form h3{
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-left: 6%;
-  padding-left: -6%;
   border-bottom-left-radius: 0.8vw;
   border-top-left-radius: 0.8vw;
-  border: 1px solid #FF4C49;
+  border: 1px solid #5BB59B;
   position: relative;
   right: 0;
   outline: none;
@@ -191,7 +215,7 @@ form h3{
   padding: 2vh;
   border-bottom-left-radius: 0.8vw;
   border-top-left-radius: 0.8vw;
-  border: 1px solid #FF4C49;
+  border: 1px solid #5BB59B;
   position: relative;
   right:  0;
   outline: none;
@@ -203,7 +227,7 @@ form h3{
 
 }
 #RGPDRS{
-  margin-top: 7vw;
+  margin-top: 5vw;
 }
 .reseaux{
   width: 30%;
@@ -214,18 +238,93 @@ form h3{
 }
 
 .reseaux-mobile {
-  width: 0;
+  display: none;
 }
 
 .reseaux img{
   width: 12%;
 }
 #rgpd{
-
   width: 80%;
   display: block;
   font-size: 0.7vw;
-  font-family: "Montserrat-Regular";
-  margin-top: 2%;
+  font-family: "Montserrat-Regular", sans-serif;
+  margin-top: 1%;
 }
 
+#rgpd a{
+  color:#FF4C49;
+  font-size: 0.7vw;
+  text-decoration: underline;
+}
+
+#title-ml{
+  font-family: "Montserrat-Regular", sans-serif;
+  color: #000;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+#section-ml {
+  width: 70%;
+  margin-left: 5%;
+}
+
+#text-ml {
+  font-family: "Montserrat-Regular", sans-serif;
+  color: #000;
+  font-size: 1.3vw;
+}
+
+footer {
+  text-decoration: underline;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 1.1vw;
+  font-weight: 700;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+}
+
+#copyright {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+#link-rs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 12%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+
+.logo-lugh-ml{
+  width: 6%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
