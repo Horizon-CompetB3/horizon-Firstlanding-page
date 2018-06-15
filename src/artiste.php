@@ -266,7 +266,7 @@ if (isset($_POST['mail'])) {
           de modification, de rectification et de suppression de ces données. Pour l’exercer, Vous pouvez envoyer un
           e-mail l’adresse suivante : <b>Lugh.entreprise@gmail.com</b>
           </br><a href="mentions-legales.php">Mentions légales</a></p>
-        <img class="fond-degradé" src="img/mobile/Rectangle@2x.png" alt="fond-degradé">
+        <img class="fond-degrade" src="img/mobile/Rectangle@2x.png" alt="fond-degradé">
       </div>
 
     </form>
