@@ -247,7 +247,7 @@ if (isset($_POST['mail'])) {
   <div id="back-content">
 
     <form method="post" action="" class="formulaire" id="form" class="form-ent">
-      <h3>Inscrivez-vous à la newsletter</h3>
+      <h3>Soyez les premiers à découvrir notre service en vous inscrivant à la newsletter</h3>
       <div class="input">
         <div class="div-input">
           <input type="text" class="input-text" id="mailInput-art" placeholder="Email" name="mail">

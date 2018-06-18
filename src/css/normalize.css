@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 679px) {
 
   .logo-lugh{
     width: 16%;
@@ -41,8 +41,10 @@
   }
 
   form h3 {
-    font-size: 3.8vw;
+    font-size: 3.2vw;
     text-align: center;
+    margin: auto;
+    width: 85%;
   }
 
   .input{
@@ -72,6 +74,7 @@
     cursor: pointer;
     margin-left: 11%;
     padding: 6%;
+    -webkit-appearance: none;
   }
 
   .div-input {
@@ -169,6 +172,8 @@
   #section-ml {
     width: 85%;
     margin: auto;
+    overflow: scroll;
+    height: 75vh;
   }
 
   #title-ml {
@@ -183,7 +188,7 @@
   #text-ml {
     font-family: "Montserrat-Regular", sans-serif;
     color: #000;
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin-top: 6%;
   }
 
@@ -210,3 +215,360 @@
     margin-left: 44%;
   }
 }
+
+
+
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
+
+  .logo-lugh {
+    width: 7%;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  #logo{
+    width: 100%;
+  }
+
+
+  h1 {
+    font-family: "Montserrat-Bold", sans-serif;
+    color: #FF4C49;
+    font-size: 3vw;
+  }
+
+  #svg-background {
+    position: absolute;
+    right: -2%;
+    width: 45%;
+    top: 0;
+  }
+  #svg-background-2{
+    position: absolute;
+    right: 0;
+    width: 38%;
+    top: -26%;
+  }
+  #cont-btn {
+    z-index: 2;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 21%;
+    display: block;
+  }
+  #burger-ctr{
+    display: none;
+  }
+  .logo-lugh-mob{
+    display: none;
+  }
+  #btn-entreprise {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    border-radius: 1vw;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+
+  #btn-artiste{
+    background-color: transparent;
+    color: #FF4C49;
+    border: 2px solid #FF4C49;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 1vw;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    font-size: 0.9vw;
+    cursor: pointer;
+  }
+
+  #btn-entreprise:hover{
+    background-color: #ffffff;
+    color: #FF4C49;
+    transition: 0.5s;
+  }
+
+  #btn-artiste:hover {
+    background-color: #FF4C49;
+    color: white;
+    transition: 0.5s;
+  }
+
+  #section-landing{
+    width: 70%;
+    margin-top: 4%;
+    position: relative;
+    margin-left: 5%;
+  }
+
+  .redirection {
+    display: none;
+  }
+
+  #text-1{
+    width: 55%;
+    margin-top: 3%;
+    font-size: 1.7vw;
+    font-family: "Montserrat-Regular";
+  }
+  .text-p-landing{
+    text-align: center;
+    /* margin-top: 2%; */
+    font-size: 1.1vw;
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  form{
+    margin-top: 4%;
+  }
+
+  form h3{
+    font-family: "Montserrat-Medium";
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    width: 66%;
+  }
+
+  .input{
+    display: flex;
+    margin-top: 1%;
+    width: 40%;
+  }
+  .div-input{
+    width: 60%;
+    z-index: 3;
+  }
+
+  .div-submit{
+    width: 40%;
+    z-index: 4;
+  }
+
+  #submit-ent{
+    width: 100%;
+    background-color: #5BB59B;
+    height: 100%;
+    color: #ffffff;
+    border-bottom-right-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
+    border: 6px solid #5BB59B;
+    font-size:  1.3vw;
+    font-weight:  600;
+    cursor: pointer;
+  }
+
+  #submit{
+    width: 100%;
+    background-color: #5BB59B;
+    height: 100%;
+    color: #ffffff;
+    border-bottom-right-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
+    border: 6px solid #5BB59B;
+    font-size:  1.3vw;
+    font-weight:  600;
+    z-index: 200;
+  }
+
+  ::placeholder {
+    font-size: 1.1vw;
+  }
+
+  #mailInput-ent{
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 6%;
+    border-bottom-left-radius: 0.8vw;
+    border-top-left-radius: 0.8vw;
+    border: 1px solid #5BB59B;
+    position: relative;
+    right: 0;
+    outline: none;
+  }
+  #mailInput-art{
+    width: 100%;
+    padding: 2vh;
+    border-bottom-left-radius: 0.8vw;
+    border-top-left-radius: 0.8vw;
+    border: 1px solid #5BB59B;
+    position: relative;
+    right:  0;
+    outline: none;
+  }
+  .min-link{
+    font-size: 0.7vw;
+    font-weight: 300;
+    display: block;
+  }
+
+  #error_message {
+    color: #000;
+    margin-top: 3%;
+    font-size: 1.3vw;
+    font-family: "Montserrat-Regular";
+
+  }
+
+  #RGPDRS{
+    margin-top: 8vw;
+  }
+
+  .reseaux{
+    width: 30%;
+  }
+
+  .fond-degrade {
+    display:none;
+  }
+
+  .reseaux-mobile {
+    display: none;
+  }
+
+  .reseaux img{
+    width: 12%;
+  }
+
+  #rgpd {
+    width: 85%;
+    display: block;
+    font-size: 1.1vw;
+    font-family: "Montserrat-Regular", sans-serif;
+    margin-top: 2%;
+  }
+
+  #rgpd a {
+    color: #FF4C49;
+    font-size: 1.1vw;
+    text-decoration: underline;
+  }
+
+  #title-ml {
+    font-family: "Montserrat-Regular", sans-serif;
+    color: #000;
+    font-size: 2.3vw;
+  }
+
+  #section-ml {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4%;
+    overflow: scroll;
+    height: 65vh;
+  }
+
+  #text-ml {
+    font-family: "Montserrat-Regular", sans-serif;
+    color: #000;
+    font-size: 1.5vw;
+    margin-top: 2%;
+  }
+
+  footer {
+    text-decoration: underline;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  #copyright {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+  }
+
+  #link-rs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 31%;
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    font-size: 1.5vw;
+  }
+
+  .logo-lugh-ml {
+    width: 6%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1679px) {
+
+  #svg-background {
+    position: absolute;
+    right: 0;
+    width: 38%;
+    top: 0;
+  }
+
+  #svg-background-2 {
+    position: absolute;
+    right: 0;
+    width: 36%;
+    top: -16%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1680px) {
+
+  #svg-background {
+    position: absolute;
+    right: 0;
+    width: 38%;
+    top: 0;
+  }
+
+  #svg-background-2 {
+    position: absolute;
+    right: 0;
+    width: 33%;
+    top: -10%;
+  }
+
+}
+
+

@@ -57,14 +57,14 @@ h1 {
 #svg-background{
   position: absolute;
   right: 0;
-  width: 35%;
-  top: -53%;
+  width: 38%;
+  top: 0;
 }
 #svg-background-2{
   position: absolute;
   right: 0;
-  width: 38%;
-  top: -35%;
+  width: 37%;
+  top: -24%;
 }
 #cont-btn{
   z-index: 2;
@@ -155,7 +155,10 @@ form{
 form h3{
   font-family: "Montserrat-Medium";
   text-transform: uppercase;
+  font-size: 1vw;
+  width: 40%;
 }
+
 .input{
   display: flex;
   margin-top: 1%;
@@ -180,7 +183,8 @@ form h3{
   border: 6px solid #5BB59B;
   font-size:  1.3vw;
   font-weight:  600;
-  cursor: pointer;
+
+  z-index: 200;
 }
 
 #submit{
@@ -194,6 +198,7 @@ form h3{
   font-size:  1.3vw;
   font-weight:  600;
   z-index: 200;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -233,7 +238,6 @@ form h3{
   margin-top: 3%;
   font-size: 1.3vw;
   font-family: "Montserrat-Regular";
-
 }
 
 #RGPDRS{
@@ -272,7 +276,7 @@ form h3{
 #title-ml{
   font-family: "Montserrat-Regular", sans-serif;
   color: #000;
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-weight: 700;
 }
 
@@ -284,7 +288,7 @@ form h3{
 #text-ml {
   font-family: "Montserrat-Regular", sans-serif;
   color: #000;
-  font-size: 1.3vw;
+  font-size: 0.8vw;
 }
 
 footer {

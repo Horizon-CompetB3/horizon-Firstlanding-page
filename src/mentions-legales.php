@@ -67,27 +67,40 @@ if (isset($_POST['mail'])) {
 </header>
 <section id="section-ml">
   <h1 id="title-ml">Mentions légales</h1>
-  <p id="text-ml">Conformément aux dispositions de l’article 6 III-1 de la loi n° 2004-575 du 21 juin 2004 pour
-    la confiance dans l’économie numérique, nous vous informons que : </br></br>
+  <p id="text-ml">
+    Vous êtes actuellement connecté(e) sur le site Internet officiel de lugh-france.fr.</br></br>
 
-    Le présent site est édité par : </br></br>
+    Ce site web est édité par :</br>
+    Lugh</br>
+    IESA multimédia</br>
+    5 avenue de l’Opéra 75001 Paris</br>
+    Numéro de téléphone : 01 57 19 94 11</br>
+    E-mail : lugh.entreprise@gmail.com</br>
+    Numéro de SIRET : 77408201000038743</br>
 
-    LUGH </br>
-    IESA Multimedia </br>
-    5 rue Saint-Augustin </br>
-    75002 PARIS </br>
-    Numéro de téléphone : 01 57 19 94 11 </br>
-    E-mail : lugh.entreprise@gmail.com </br>
-    Numéro de SIRET : 77408201000038743 </br></br>
+    Déclaration CNIL N° 795360 "lugh-france.fr" du 8 mars 2002.</br>
+    Déclaration "Service Internet" CSA "lugh-france.fr" du 8 décembre 1998.</br></br>
 
+    1.1.      Propriété intellectuelle</br>
+    Tous les contenus présents sur le site de lugh-france.fr sont couverts par le droit d'auteur. Toute reprise est dès lors conditionnée à l'accord de leur auteur.
+    La reproduction ou la représentation de tout ou partie de ces sites, sur quelque support que ce soit, est formellement interdite sauf accord préalable écrit du directeur de la publication.
+
+    Vous pouvez toutefois télécharger ou imprimer sur papier des pages et/ou des parties du site de lugh-france.fr , à des fins strictement personnelles, pour autant que vous ne supprimiez pas les mentions relatives au droit d'auteur ou autres mentions concernant les droits de propriété intellectuelle.
+
+    Le téléchargement ou toute autre forme de copie d'informations présentes sur le site de lugh-france.fr ne vous confèrent aucun droit sur ceux-ci. Vous ne pouvez ni reproduire (en tout ou en partie) ni transmettre (électroniquement ou de quelque autre manière) ni modifier, ni utiliser le site de lugh-france.fr à des fins publiques ou commerciales.
+
+    Le nom lugh-france.fr , ainsi que le logo correspondant à ce nom est une marque déposée. Vous ne pouvez reproduire, supprimer, réutiliser ou modifier en aucune manière ces signes distinctifs lorsqu'ils apparaissent sur les pages du site.
+    </br></br>
+    1.2.      Hébergement du site</br>
     L’hébergeur du site assurant le stockage direct et permanent est : 1&1 Internet SARL 7, place de la Gare BP
-    70109 57201 Sarreguemines Cedex. </br></br>
+    70109 57201 Sarreguemines Cedex.</br></br>
+    1.3.       Traitement des données personnelles
+    Conformément à la loi "informatique et liberté" du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès, de rectification, de modification et de suppression concernant vos données personnelles collectées sur le site de lugh-france.fr . Vous pouvez exercer ce droit en envoyant un courriel à lugh.entreprise@gmail.com.
+    </br>
+    La collecte de données personnelles est effectuée en vue de permettre la transmission d’informations complémentaires ou personnalisées sur des programmes ou des offres commerciales de l'IESA multimédia et du réseau Studialis et/ou de permettre l’inscription en ligne à ces programmes.
+    </br>
+    Les informations collectées sont à l’usage exclusif de lugh-france.fr.
 
-    Conformément à la loi Informatique et libertés du 6 janvier 1978 modifiée en 2004, les données
-    à caractère personnel sont destinées à l’exploitant du site et leur usage conforme aux finalités
-    déclarées à la Cnil. </br></br>
-
-    Les données sont destinées à la société LUGH.
   </p>
 
 </section>
